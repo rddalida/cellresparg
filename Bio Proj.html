@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script>
+    var bam = function() {
+      var yay = document.getElementById("beep").value.toLowerCase();
+      var woo = "bit.ly/" + btoa(yay);
+      document.getElementById("boop").innerHTML = woo;
+    }
+  </script>
+	<style>
+body {
+	background-color: black;
+	font-size: 20px;
+	font-family: Montserrat;
+}
+
+.div1 {
+  opacity: 0;
+	animation: visible 1s linear 1s, spaghettiUp 1s ease-in-out, spaghettiDown 1s ease-in-out 2s;
+	-webkit-animation: visible 1s linear 1s, spaghettiUp 1s ease-in-out, spaghettiDown 1s ease-in-out 2s;
+	-moz-animation: visible 1s linear 1s, spaghettiUp 1s ease-in-out, spaghettiDown 1s ease-in-out 2s;
+	position: absolute;
+	padding: 20px;
+	width: 120px;
+	top: 30px;
+	background-color: inherit;
+	color: white;
+}
+
+.div2 {
+  opacity: 0;
+  animation: spaghettiUp 1s ease-in-out 1s, spaghettiDown 1s ease-in-out 2s;
+  -webkit-animation: spaghettiUp 1s ease-in-out 1s, spaghettiDown 1s ease-in-out 2s;
+  -moz-animation: spaghettiUp 1s ease-in-out 1s, spaghettiDown 1s ease-in-out 2s;
+  position: absolute;
+  padding: 20px;
+  width: 120px;
+  top: 80px;
+  left: 350px;
+  background-color: inherit;
+  color: white;
+}
+
+.div3 {
+  opacity: 1;
+  animation: invisible 2s linear, spaghettiUp 1s ease-in-out 2s;
+  -webkit-animation: invisible 2s linear, spaghettiUp 1s ease-in-out 2s;
+  -moz-animation: invisible 2s linear, spaghettiUp 1s ease-in-out 2s;
+  position: absolute;
+  padding: 20px;
+  width: 400px;
+  top: 30px;
+  background-color: inherit;
+  color: white;
+}
+
+.div4 {
+  opacity: 1;
+  animation: invisible 4s linear, spaghettiUp 1s ease-in-out 4s;
+  -webkit-animation: invisible 4s linear, spaghettiUp 1s ease-in-out 4s;
+  -moz-animation: invisible 4s linear, spaghettiUp 1s ease-in-out 4s;
+  position: absolute;
+  padding: 20px;
+  top: 80px;
+  left: 310px;
+  background-color: inherit;
+  color: white;
+}
+
+.div5 {
+  opacity: 1;
+  animation: invisible 5s linear, spaghettiUp 1s ease-in-out 5s;
+  -webkit-animation: invisible 5s linear, spaghettiUp 1s ease-in-out 5s;
+  -moz-animation: invisible 5s linear, spaghettiUp 1s ease-in-out 5s;
+  position: absolute;
+  padding: 20px;
+  width: 500px;
+  top: 300px;
+  background-color: inherit;
+  color: white;
+}
+
+.div6 {
+  opacity: 1;
+  animation: invisible 11s linear, faded 1s ease-in-out 11s;
+  -webkit-animation: invisible 11s linear, faded 1s ease-in-out 11s;
+  -moz-animation: invisible 11s linear, faded 1s ease-in-out 11s;
+  position: absolute;
+  padding: 20px;
+  top: 500px;
+  background-color: inherit;
+  color: white;
+}
+
+.div7 {
+  opacity: 1;
+  animation: invisible 13s linear, faded 1s ease-in-out 13s;
+  -webkit-animation: invisible 13s linear, faded 1s ease-in-out 13s;
+  -moz-animation: invisible 13s linear, faded 1s ease-in-out 13s;
+  position: absolute;
+  padding: 20px;
+  top: 560px;
+  background-color: inherit;
+  color: white;
+}
+
+.div8 {
+  opacity: 1;
+  animation: invisible 15s linear, faded 1s ease-in-out 15s;
+  -webkit-animation: invisible 15s linear, faded 1s ease-in-out 15s;
+  -moz-animation: invisible 15s linear, faded 1s ease-in-out 15s;
+  position: absolute;
+  padding: 20px;
+  top: 640px;
+  width: 700px;
+  background-color: inherit;
+  color: white;
+}
+
+input {
+  text-transform: lowercase;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes faded {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes faded {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spaghettiUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-moz-keyframes spaghettiUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes spaghettiUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes spaghettiDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@-moz-keyframes spaghettiDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes spaghettiDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+
+@-webkit-keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes visible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes visible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+	</style>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+	<div class="div1">
+		This is you.
+	</div>
+	<div class="div2">
+		<img src="./sugar.png" alt="*sugar picture*" />
+	</div>
+	<div class="div3">
+		Well... not really. THIS is you:
+	</div>
+  <div class="div4">
+    <img src="./glucose.png" alt="*glucose picture*" />
+  </div>
+  <div class="div5">
+    And yes... you have just been consumed by a human. Whether it be in bread, rice, or candy, your atoms are going to be torn apart, mercilessly milked for energy, until you can't go on anymore and you've been drained of all your will to live.
+  </div>
+  <div class="div6">
+    ...sounds fun. :D
+  </div>
+  <div class="div7">
+    To begin, the human's body wants you to be split into a bunch of different materials, but you're confused. You don't know where you are.
+  </div>
+  <div class="div8">
+    To proceed to the next stage, you must figure out where you are. Where does the first stage of cellular respiration occur? Input the answer below IN LOWERCASE. If you entered the correct answer, the link which pops up will lead you to the next stage.
+    <br><br>
+    <form>
+      <input type="text" id="beep"/>
+      <button type="button" onclick="bam()">Submit</button>
+      <br><br>
+      Link: <span id="boop"></span>
+    </form>
+  </div>
+</body>
+</html>
