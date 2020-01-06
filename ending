@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+	<style>
+body {
+	background-color: black;
+	font-size: 20px;
+	font-family: Montserrat;
+}
+
+.div1 {
+  opacity: 0;
+	animation: visible 1s linear 1s, spaghettiUp 1s ease-in-out, spaghettiDown 1s ease-in-out 2s;
+	-webkit-animation: visible 1s linear 1s, spaghettiUp 1s ease-in-out, spaghettiDown 1s ease-in-out 2s;
+	-moz-animation: visible 1s linear 1s, spaghettiUp 1s ease-in-out, spaghettiDown 1s ease-in-out 2s;
+	position: absolute;
+	padding: 20px;
+	width: 120px;
+	top: 30px;
+	background-color: inherit;
+	color: white;
+}
+
+.div2 {
+  opacity: 0;
+  animation: spaghettiUp 1s ease-in-out 1s, spaghettiDown 1s ease-in-out 2s;
+  -webkit-animation: spaghettiUp 1s ease-in-out 1s, spaghettiDown 1s ease-in-out 2s;
+  -moz-animation: spaghettiUp 1s ease-in-out 1s, spaghettiDown 1s ease-in-out 2s;
+  position: absolute;
+  padding: 20px;
+  width: 120px;
+  top: 80px;
+  left: 350px;
+  background-color: inherit;
+  color: white;
+}
+
+.div3 {
+  opacity: 1;
+  animation: invisible 2s linear, spaghettiUp 1s ease-in-out 2s;
+  -webkit-animation: invisible 2s linear, spaghettiUp 1s ease-in-out 2s;
+  -moz-animation: invisible 2s linear, spaghettiUp 1s ease-in-out 2s;
+  position: absolute;
+  padding: 20px;
+  width: 400px;
+  top: 30px;
+  background-color: inherit;
+  color: white;
+}
+
+.div4 {
+  opacity: 1;
+  animation: invisible 4s linear, spaghettiUp 1s ease-in-out 4s;
+  -webkit-animation: invisible 4s linear, spaghettiUp 1s ease-in-out 4s;
+  -moz-animation: invisible 4s linear, spaghettiUp 1s ease-in-out 4s;
+  position: absolute;
+  padding: 20px;
+  top: 80px;
+  left: 310px;
+  background-color: inherit;
+  color: white;
+}
+
+.div5 {
+  opacity: 1;
+  animation: invisible 5s linear, spaghettiUp 1s ease-in-out 5s;
+  -webkit-animation: invisible 5s linear, spaghettiUp 1s ease-in-out 5s;
+  -moz-animation: invisible 5s linear, spaghettiUp 1s ease-in-out 5s;
+  position: absolute;
+  padding: 20px;
+  width: 600px;
+  top: 300px;
+  background-color: inherit;
+  color: white;
+}
+
+.div6 {
+  opacity: 1;
+  animation: invisible 13s linear, faded 1s ease-in-out 13s;
+  -webkit-animation: invisible 13s linear, faded 1s ease-in-out 13s;
+  -moz-animation: invisible 13s linear, faded 1s ease-in-out 13s;
+  position: absolute;
+  padding: 20px;
+  width: 600px;
+  top: 500px;
+  background-color: inherit;
+  color: white;
+}
+
+.div7 {
+  opacity: 1;
+  animation: invisible 18s linear, faded 1s ease-in-out 18s;
+  -webkit-animation: invisible 18s linear, faded 1s ease-in-out 18s;
+  -moz-animation: invisible 18s linear, faded 1s ease-in-out 18s;
+  position: absolute;
+  padding: 20px;
+  top: 620px;
+  background-color: inherit;
+  color: white;
+}
+
+.div8 {
+  opacity: 1;
+  animation: invisible 20s linear, faded 1s ease-in-out 20s;
+  -webkit-animation: invisible 20s linear, faded 1s ease-in-out 20s;
+  -moz-animation: invisible 20s linear, faded 1s ease-in-out 20s;
+  position: absolute;
+  padding: 20px;
+  top: 670px;
+  width: 700px;
+  background-color: inherit;
+  color: white;
+}
+
+input {
+  text-transform: lowercase;
+}
+
+a {
+  color: white;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes faded {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* Hello! Here is a hint: the first stage occurs in the 4JE@A=2D>pppppppp ERROR: Sorry, but access to this comment is forbidden. Error code: ROT47; */
+@-moz-keyframes faded {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spaghettiUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-moz-keyframes spaghettiUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes spaghettiUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes spaghettiDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@-moz-keyframes spaghettiDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes spaghettiDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+
+@-webkit-keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes visible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes visible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+	</style>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+	<div class="div1">
+		This was you then...
+	</div>
+	<div class="div2">
+		<img src="./glucose.png" alt="*glucose picture*" />
+	</div>
+	<div class="div3">
+		But now...
+	</div>
+  <div class="div4">
+    <img src="./image.png" alt="*ATP picture*" />
+  </div>
+  <div class="div5">
+    After undergoing numerous transformations, the molecule of glucose that you were has been changed into ATP. In fact, one molecule of glucose turns into 36 molecules of ATP.<br>
+    The whole process took some effort from the cells, while you were broken down into numerous other compounds. So technically, you cease to exist.
+  </div>
+  <div class="div6">
+    The thing is, though - this all can be reversed. Photosynthesis is similar in the sense that it builds up glucose from other chemicals, so there's still a hope that you can be brought together again.
+  </div>
+  <div class="div7">
+    Someday, you will feel whole again.
+  </div>
+  <div class="div8">
+    Cellular Respiration - by Dylan Dalida<br><br>A Project for Bio1<br><br>
+    <a href="./sources.txt">Sources</a>
+  </div>
+</body>
+</html>
