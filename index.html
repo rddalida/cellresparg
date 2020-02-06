@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!--updated as of 7 Feb 2020, 00:48-->
 <html>
 <head>
   <meta charset="utf-8" />
   <script>
     var bam = function() {
-      var yay = document.getElementById("beep").value.toLowerCase();
+      var yay = document.getElementById("beep").value.toUpperCase();
       var woo = "bit.ly/" + btoa(yay);
       document.getElementById("boop").innerHTML = woo;
     }
@@ -120,7 +121,7 @@ body {
 }
 
 input {
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 @keyframes faded {
